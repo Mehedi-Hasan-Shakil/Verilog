@@ -1,4 +1,4 @@
-dule ripple_carry_counter(q, q_bar, clear, clk);
+module ripple_carry_counter(q, q_bar, clear, clk);
 	input clk, clear;
 	output [3:0] q, q_bar;
 	jk_flip_flop jk1(q[0], q_bar[0], 1, 1, clear, clk);
